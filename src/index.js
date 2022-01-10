@@ -10,7 +10,6 @@ import isString from 'lodash/isString';
  * @param {Object} clientCredentials Firebase client config object
  */
 export const initFirebase = (clientCredentials) => {
-  console.log('clientCredentials', clientCredentials);
   if (!firebase.apps.length) {
     firebase.initializeApp(clientCredentials);
     // Check that `window` is in scope for the analytics module!
